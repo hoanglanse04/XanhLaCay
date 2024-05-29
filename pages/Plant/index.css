@@ -1,0 +1,140 @@
+nav img{
+  width: 4em;
+  height: auto;
+  border-radius: 10px;
+}
+#navbarCollapse{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search{
+  padding: 2px 2px;
+  background-color: white;
+  border-radius: 5px;
+}
+.search input{
+  border: none;
+}
+nav i{
+  font-size: 1.2rem !important;
+}
+.navbar-nav a{
+  color: black ;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.navbar-nav .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-nav .nav-item .content{
+  width: 65%;
+  background-color: aliceblue;
+  height: 3px;
+  margin-top: -8px;
+  border-radius: 10px;
+}
+.bg-color-green{
+  background-color: #000000 ;
+  padding: 10px 20px;
+}
+.navbar-nav a:hover{
+  color: #95C795;
+}
+.route{
+  color: #777777;
+  background-color: #F7F8FA !important;
+}
+
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-img img{ 
+  width: 100%;
+  height: 10rem;
+}
+.product-item {
+  flex: 0 0 calc(25% - 20px); /* Chiếm 25% không gian của container trừ đi khoảng cách */
+  margin-bottom: 20px; /* Khoảng cách giữa các hàng */
+}
+
+.product-item{
+  position: relative;
+  width: 20%;
+  height: auto;
+  margin: 1rem 1rem;
+}
+.product-item img{
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.product-item img:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-item p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 2px 2px;
+}
+.product-item h5 h6{
+  font-weight: 300;
+}
+.product-item button{
+  border: none;
+  background-color: #99CC99;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+.product-item button span{
+  padding: 5px 5px;
+}
+.product-item button i{
+  color: #fff;
+  font-size: 20px;
+}
+#productAcess{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#productList,#productAcess{
+  padding-top: 20px;
+  border-top: 1px solid rgb(201, 191, 191);
+}
+.main_content{
+  padding: 100px 0 !important;
+}
+Footer{
+  padding: 50px 50px;
+  background-color: #E9E7E7;
+}
+footer i{
+  color: black;
+  margin: 5px 5px;
+}
+footer span{
+  color: #777777;
+}
+.social i{
+  font-size: 1.5rem;
+
+}
+.social i:hover{
+  color: #99CC99;
+  cursor: pointer;
+}
+iframe{
+  width: 100%;
+  height: auto;
+}

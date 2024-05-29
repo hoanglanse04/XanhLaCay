@@ -1,24 +1,5 @@
-window.onscroll = function() {
-  var navbar = document.getElementById('navbar');
-  let navbar_item = document.querySelectorAll('.navbar-nav a')
 
-  console.log(navbar_item)
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('scrolled');
-    navbar_item.forEach(item =>{
-      item.style.color ='black';
-    })
-  } else {
-    navbar.classList.remove('scrolled');
-    navbar_item.forEach(item =>{
-      item.style.color ='#96dd96';
-    })
-  }
-};
-
-
-// 
- const listItem =[
+const listItem =[
   {
     "id": 1,
     "name": "Bàng Sing",
@@ -105,21 +86,64 @@ window.onscroll = function() {
   }
 ]
 
-const reListItem = listItem.slice().reverse();
-
-let listProduct = document.getElementById('list-product');
-listProduct.innerHTML='';
+const listAccessories  =[
+  {
+    "name": "Giỏ Terrarium",
+    "price": "40.000",
+    "thumbnail": "https://c2.staticflickr.com/8/7601/27070555515_8748b9d0bd_c.jpg",
+    
+  },
+ 
+ 
+  {
+    "name": "Chậu Sứ AME",
+    "price": "36.000",
+    "thumbnail": "https://www.phukiencaycanh.com/media/k2/items/cache/e4695529e9bbf8b60b6165d76397876b_S.jpg"
+    
+  },
+  {
+    "name": "Chậu Men 04",
+    "price": "32.000",
+    "thumbnail": "https://www.phukiencaycanh.com/media/k2/items/cache/afb2f0b609b92600310905cf1a1820fe_S.jpg"
+    
+  }, 
+  {
+    "name": "Chậu Men 32",
+    "price": "32.000",
+    "thumbnail": "https://www.phukiencaycanh.com/media/k2/items/cache/9cb6e71fd379c0a6d58ef216f9910ae9_S.jpg"
+    
+  }, 
+  {
+    "name": "Chậu đất nung",
+    "price": "25.000",
+    "thumbnail": "https://www.phukiencaycanh.com/media/k2/items/cache/a6026d97db0c19ba76f2c5c141efd324_S.jpg",
+    
+  }, 
+  {
+    "name": "Sỏi trắng nhỏ",
+    "price": "35.000",
+    "thumbnail": "https://www.phukiencaycanh.com/media/k2/items/cache/dc7259495409db483f53803df58f17e8_S.jpg",
+    
+  }, 
+  {
+    "name": "Sỏi tự nhiên Trung",
+    "price": "40.000",
+    "thumbnail": "https://www.phukiencaycanh.com/media/k2/items/cache/27dd7cddd3c2da4d8b388b00e3c63c22_S.jpg",
+    
+  },
+]
+let productList = document.getElementById('productList');
+productList.innerHTML='';
 listItem.forEach(item =>{
-  listProduct.innerHTML +=`
+  productList.innerHTML +=`
   <div class="product-item text-center">
     <div class="product-img">
     <img src=${item.thumbnail}>
     </div>
     <div class="product-content">
-    <h5>${item.name}</h5>
-    <h6>${item.price}đ</h6>
-    <p class ="product-desc">${item.desc}</p>
-    <p class ="product-guide">${item.care}</p>
+    <h6>${item.name}</h6>
+    <h5>${item.price}đ</h5>
+   
     
     <button><i class="bi bi-bag-fill"></i><span>Mua ngay</span></button>
     
@@ -128,22 +152,17 @@ listItem.forEach(item =>{
   `
   
 })
-
-let listProductDiscount = document.getElementById('list-product-discount');
-listProductDiscount.innerHTML='';
-reListItem.forEach(item =>{
-  listProductDiscount.innerHTML +=`
+let productAcess = document.getElementById('productAcess');
+productAcess.innerHTML='';
+listAccessories.forEach(item =>{
+  productAcess.innerHTML +=`
   <div class="product-item text-center">
-    <div class ="discount">${item.discount}%</div>
     <div class="product-img">
     <img src=${item.thumbnail}>
     </div>
     <div class="product-content">
-    <h5>${item.name}</h5>
-    <h6>${item.price}đ</h6>
-    <p class ="product-desc">${item.desc}</p>
-    <p class ="product-guide">${item.care}</p>
-    
+    <h6>${item.name}</h6>
+    <h5>${item.price}đ</h5>
     <button><i class="bi bi-bag-fill"></i><span>Mua ngay</span></button>
     
     </div>
@@ -151,19 +170,3 @@ reListItem.forEach(item =>{
   `
   
 })
-
-  const list_product = document.querySelector('#list-product');
-
-  list_product.addEventListener('wheel', function(event) {
-      if (event.deltaY !== 0) {
-          event.preventDefault();
-          list_product.scrollLeft += event.deltaY;
-      }
-  });
-  const list_product_discount = document.querySelector('#list-product-discount');
-  list_product_discount.addEventListener('wheel', function(event) {
-    if (event.deltaY !== 0) {
-        event.preventDefault();
-        list_product_discount.scrollLeft += event.deltaY;
-    }
-});
