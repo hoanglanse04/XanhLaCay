@@ -1,0 +1,167 @@
+nav img{
+  width: 4em;
+  height: auto;
+  border-radius: 10px;
+}
+#navbarCollapse{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search{
+  padding: 2px 2px;
+  background-color: white;
+  border-radius: 5px;
+}
+.search input{
+  border: none;
+}
+nav i{
+  font-size: 1.2rem !important;
+}
+.navbar-nav a{
+  color: var(--main-text-color) ;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.navbar-nav .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-nav .nav-item .content{
+  width: 65%;
+  background-color: aliceblue;
+  height: 3px;
+  margin-top: -8px;
+  border-radius: 10px;
+}
+.bg-color-green{
+  background-color: #99CC99;
+  padding: 10px 20px;
+}
+
+header{
+  background-image: url('https://growinshade.com/cdn/shop/files/magali-merzougui-nFmju9IU01Q-unsplash_x1024.jpg?v=1629164250') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.Card{
+  padding: 50px 0;
+}
+.Card .card-text{
+  color: #777777;
+  
+}
+.Card .card-title:hover{
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+#navbar.scrolled {
+  background-color: #fff; /* Màu bạn muốn thay đổi */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu sắc */
+}
+.color-black{
+  color: black !important;
+}
+.Products{
+  padding: 50px 0;
+}
+.product-item .discount{
+  position: absolute;
+  background-color: #FFC93C;
+  width: 3rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+Content{
+  padding: 50px;
+}
+#list-product{
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  background-color: #f0f0f0;  
+  border-radius: 10px;
+  
+}
+#list-product::-webkit-scrollbar {
+  display: none; 
+}
+#list-product-discount{
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  background-color: #f0f0f0;  
+  border-radius: 10px;
+  
+}
+#list-product-discount::-webkit-scrollbar {
+  display: none; 
+}
+.product-item{
+  position: relative;
+  width: 20%;
+  height: auto;
+  margin: 1rem 1rem;
+}
+.product-item img{
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.product-item img:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-item p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 2px 2px;
+}
+.product-item h5 h6{
+  font-weight: 300;
+}
+.product-item button{
+  border: none;
+  background-color: #99CC99;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+.product-item button span{
+  padding: 5px 5px;
+}
+.product-item button i{
+  color: #fff;
+  font-size: 20px;
+}
+
+Footer{
+  padding: 50px 50px;
+  background-color: #E9E7E7;
+}
+footer i{
+  color: black;
+  margin: 5px 5px;
+}
+footer span{
+  color: #777777;
+}
+.social i{
+  font-size: 1.5rem;
+
+}
+.social i:hover{
+  color: #99CC99;
+  cursor: pointer;
+}
+iframe{
+  width: 100%;
+  height: auto;
+}
