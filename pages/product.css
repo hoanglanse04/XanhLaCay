@@ -138,3 +138,13 @@ iframe{
   width: 100%;
   height: auto;
 }
+.product-item p:hover{
+  text-overflow: unset;
+  overflow:unset;
+  white-space: pre-wrap;
+}
+.product-item p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 2px 2px;
+}

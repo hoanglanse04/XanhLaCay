@@ -143,8 +143,7 @@ listItem.forEach(item =>{
     <div class="product-content">
     <h6>${item.name}</h6>
     <h5>${item.price}đ</h5>
-   
-    
+ 
     <button><i class="bi bi-bag-fill"></i><span>Mua ngay</span></button>
     
     </div>
@@ -163,6 +162,7 @@ listAccessories.forEach(item =>{
     <div class="product-content">
     <h6>${item.name}</h6>
     <h5>${item.price}đ</h5>
+    
     <button><i class="bi bi-bag-fill"></i><span>Mua ngay</span></button>
     
     </div>

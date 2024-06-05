@@ -118,7 +118,11 @@ Content{
   transform: scale(1.2);
   transition: transform 0.5s ease-in-out;
 }
-
+.product-item p:hover{
+  text-overflow: unset;
+  overflow:unset;
+  white-space: pre-wrap;
+}
 .product-item p{
   overflow: hidden;
   text-overflow: ellipsis;

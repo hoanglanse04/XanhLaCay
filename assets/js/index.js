@@ -141,8 +141,8 @@ reListItem.forEach(item =>{
     <div class="product-content">
     <h5>${item.name}</h5>
     <h6>${item.price}đ</h6>
-    <p class ="product-desc">${item.desc}</p>
-    <p class ="product-guide">${item.care}</p>
+    <p class ="product-desc">●${item.desc}</p>
+    <p class ="product-guide">●${item.care}</p>
     
     <button><i class="bi bi-bag-fill"></i><span>Mua ngay</span></button>
     
